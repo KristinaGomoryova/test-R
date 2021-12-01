@@ -1,0 +1,1036 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="spec.xml">
+<entry key="spec_name" type="xstring" value="default"/>
+<entry key="number_columns" type="xint" value="20"/>
+<config key="column_spec_0">
+<entry key="column_name" type="xstring" value="Majority Protein IDs"/>
+<config key="element_names">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+<config key="column_type">
+<config key="collection_element_type">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+</config>
+<entry key="cell_class" type="xstring" value="org.knime.core.data.collection.ListCell"/>
+</config>
+<config key="column_domain"/>
+<config key="column_properties"/>
+</config>
+<config key="column_spec_1">
+<entry key="column_name" type="xstring" value="UniProt_Protein ID (#1)"/>
+<config key="element_names">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+<config key="column_type">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+</config>
+<config key="column_domain">
+<config key="possible_values">
+<entry key="array-size" type="xint" value="7"/>
+<config key="0">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="A0A0J9YWU9 &amp; P0DP08 &amp; P0DP06 &amp; A0A0C4DH41 &amp; P01825 &amp; P06331 &amp; P01824 &amp; A0A0C4DH34 &amp; A0A087WW49 &amp; A0A075B7B6 &amp; A0A075B6R2 &amp; P0DP07 &amp; A0A087WSY4 &amp; Q9LKU3"/>
+</config>
+</config>
+<config key="1">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="A0FGR8"/>
+</config>
+</config>
+<config key="2">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="Q8N7Z2 &amp; A8MZA4 &amp; H0YM25"/>
+</config>
+</config>
+<config key="3">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp; F4IHU8"/>
+</config>
+</config>
+<config key="4">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=""/>
+</config>
+</config>
+<config key="5">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp;  &amp; "/>
+</config>
+</config>
+<config key="6">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="Q9LV03 &amp; "/>
+</config>
+</config>
+</config>
+</config>
+<config key="column_properties"/>
+</config>
+<config key="column_spec_2">
+<entry key="column_name" type="xstring" value="UniProt_Entry"/>
+<config key="element_names">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+<config key="column_type">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+</config>
+<config key="column_domain">
+<config key="possible_values">
+<entry key="array-size" type="xint" value="7"/>
+<config key="0">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="A0A0J9YWU9 &amp; P0DP08 &amp; P0DP06 &amp; A0A0C4DH41 &amp; P01825 &amp; P06331 &amp; P01824 &amp; A0A0C4DH34 &amp; A0A087WW49 &amp; A0A075B7B6 &amp; A0A075B6R2 &amp; P0DP07 &amp; A0A087WSY4 &amp; Q9LKU3"/>
+</config>
+</config>
+<config key="1">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="A0FGR8"/>
+</config>
+</config>
+<config key="2">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="Q8N7Z2 &amp; A8MZA4 &amp; H0YM25"/>
+</config>
+</config>
+<config key="3">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp; F4IHU8"/>
+</config>
+</config>
+<config key="4">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=""/>
+</config>
+</config>
+<config key="5">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp;  &amp; "/>
+</config>
+</config>
+<config key="6">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="Q9LV03 &amp; "/>
+</config>
+</config>
+</config>
+</config>
+<config key="column_properties"/>
+</config>
+<config key="column_spec_3">
+<entry key="column_name" type="xstring" value="UniProt_Entry name"/>
+<config key="element_names">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+<config key="column_type">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+</config>
+<config key="column_domain">
+<config key="possible_values">
+<entry key="array-size" type="xint" value="7"/>
+<config key="0">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="A0A0J9YWU9_HUMAN &amp; HVD82_HUMAN &amp; HVD34_HUMAN &amp; HV461_HUMAN &amp; HV459_HUMAN &amp; HV434_HUMAN &amp; HV439_HUMAN &amp; HV428_HUMAN &amp; A0A087WW49_HUMAN &amp; A0A075B7B6_HUMAN &amp; HV404_HUMAN &amp; HV431_HUMAN &amp; HV432_HUMAN &amp; Q9LKU3_ARATH"/>
+</config>
+</config>
+<config key="1">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="ESYT2_HUMAN"/>
+</config>
+</config>
+<config key="2">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="GG6L1_HUMAN &amp; GG6L6_HUMAN &amp; GG6LV_HUMAN"/>
+</config>
+</config>
+<config key="3">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp; F4IHU8_ARATH"/>
+</config>
+</config>
+<config key="4">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=""/>
+</config>
+</config>
+<config key="5">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp;  &amp; "/>
+</config>
+</config>
+<config key="6">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="GLUT1_ARATH &amp; "/>
+</config>
+</config>
+</config>
+</config>
+<config key="column_properties"/>
+</config>
+<config key="column_spec_4">
+<entry key="column_name" type="xstring" value="UniProt_Status"/>
+<config key="element_names">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+<config key="column_type">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+</config>
+<config key="column_domain">
+<config key="possible_values">
+<entry key="array-size" type="xint" value="7"/>
+<config key="0">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="unreviewed &amp; reviewed &amp; reviewed &amp; reviewed &amp; reviewed &amp; reviewed &amp; reviewed &amp; reviewed &amp; unreviewed &amp; unreviewed &amp; reviewed &amp; reviewed &amp; reviewed &amp; unreviewed"/>
+</config>
+</config>
+<config key="1">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="reviewed"/>
+</config>
+</config>
+<config key="2">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="reviewed &amp; reviewed &amp; reviewed"/>
+</config>
+</config>
+<config key="3">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp; unreviewed"/>
+</config>
+</config>
+<config key="4">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=""/>
+</config>
+</config>
+<config key="5">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp;  &amp; "/>
+</config>
+</config>
+<config key="6">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="reviewed &amp; "/>
+</config>
+</config>
+</config>
+</config>
+<config key="column_properties"/>
+</config>
+<config key="column_spec_5">
+<entry key="column_name" type="xstring" value="UniProt_Protein names"/>
+<config key="element_names">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+<config key="column_type">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+</config>
+<config key="column_domain">
+<config key="possible_values">
+<entry key="array-size" type="xint" value="7"/>
+<config key="0">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="Uncharacterized protein (Fragment) &amp; Immunoglobulin heavy variable 4-38-2 &amp; Immunoglobulin heavy variable 4-30-4 &amp; Immunoglobulin heavy variable 4-61 &amp; Immunoglobulin heavy variable 4-59 (Ig heavy chain V-II region NEWM) &amp; Immunoglobulin heavy variable 4-34 (Ig heavy chain V-II region ARH-77) &amp; Immunoglobulin heavy variable 4-39 (Ig heavy chain V-II region WAH) &amp; Immunoglobulin heavy variable 4-28 &amp; Uncharacterized protein (Fragment) &amp; Immunoglobulin heavy variable 4/OR15-8 (non-functional) (Fragment) &amp; Immunoglobulin heavy variable 4-4 &amp; Immunoglobulin heavy variable 4-31 &amp; Immunoglobulin heavy variable 4-30-2 &amp; Tetratricopeptide repeat (TPR)-like superfamily protein"/>
+</config>
+</config>
+<config key="1">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="Extended synaptotagmin-2 (E-Syt2) (Chr2Syt)"/>
+</config>
+</config>
+<config key="2">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="Golgin subfamily A member 6-like protein 1 &amp; Golgin subfamily A member 6-like protein 6 &amp; Golgin subfamily A member 6-like protein 22"/>
+</config>
+</config>
+<config key="3">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp; ARM repeat superfamily protein"/>
+</config>
+</config>
+<config key="4">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=""/>
+</config>
+</config>
+<config key="5">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp;  &amp; "/>
+</config>
+</config>
+<config key="6">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="Glutamate synthase 1 [NADH], chloroplastic (EC 1.4.1.14) (NADH-dependent glutamate synthase 1) (NADH-GOGAT 1) &amp; "/>
+</config>
+</config>
+</config>
+</config>
+<config key="column_properties"/>
+</config>
+<config key="column_spec_6">
+<entry key="column_name" type="xstring" value="UniProt_Gene names"/>
+<config key="element_names">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+<config key="column_type">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+</config>
+<config key="column_domain">
+<config key="possible_values">
+<entry key="array-size" type="xint" value="7"/>
+<config key="0">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp; IGHV4-38-2 &amp; IGHV4-30-4 &amp; IGHV4-61 &amp; IGHV4-59 &amp; IGHV4-34 &amp; IGHV4-39 &amp; IGHV4-28 &amp;  &amp; IGHV4OR15-8 &amp; IGHV4-4 &amp; IGHV4-31 &amp; IGHV4-30-2 &amp; T32B20.g At5g28740 T32B20.1 T32B20_1"/>
+</config>
+</config>
+<config key="1">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="ESYT2 FAM62B KIAA1228"/>
+</config>
+</config>
+<config key="2">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="GOLGA6L1 &amp; GOLGA6L6 &amp; GOLGA6L22"/>
+</config>
+</config>
+<config key="3">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp; At2g34357"/>
+</config>
+</config>
+<config key="4">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=""/>
+</config>
+</config>
+<config key="5">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp;  &amp; "/>
+</config>
+</config>
+<config key="6">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="GLT1 At5g53460 MYN8.7 &amp; "/>
+</config>
+</config>
+</config>
+</config>
+<config key="column_properties"/>
+</config>
+<config key="column_spec_7">
+<entry key="column_name" type="xstring" value="UniProt_Organism"/>
+<config key="element_names">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+<config key="column_type">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+</config>
+<config key="column_domain">
+<config key="possible_values">
+<entry key="array-size" type="xint" value="7"/>
+<config key="0">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="Homo sapiens (Human) &amp; Homo sapiens (Human) &amp; Homo sapiens (Human) &amp; Homo sapiens (Human) &amp; Homo sapiens (Human) &amp; Homo sapiens (Human) &amp; Homo sapiens (Human) &amp; Homo sapiens (Human) &amp; Homo sapiens (Human) &amp; Homo sapiens (Human) &amp; Homo sapiens (Human) &amp; Homo sapiens (Human) &amp; Homo sapiens (Human) &amp; Arabidopsis thaliana (Mouse-ear cress)"/>
+</config>
+</config>
+<config key="1">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="Homo sapiens (Human)"/>
+</config>
+</config>
+<config key="2">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="Homo sapiens (Human) &amp; Homo sapiens (Human) &amp; Homo sapiens (Human)"/>
+</config>
+</config>
+<config key="3">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp; Arabidopsis thaliana (Mouse-ear cress)"/>
+</config>
+</config>
+<config key="4">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=""/>
+</config>
+</config>
+<config key="5">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp;  &amp; "/>
+</config>
+</config>
+<config key="6">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="Arabidopsis thaliana (Mouse-ear cress) &amp; "/>
+</config>
+</config>
+</config>
+</config>
+<config key="column_properties"/>
+</config>
+<config key="column_spec_8">
+<entry key="column_name" type="xstring" value="UniProt_Gene ontology (GO)"/>
+<config key="element_names">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+<config key="column_type">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+</config>
+<config key="column_domain">
+<config key="possible_values">
+<entry key="array-size" type="xint" value="6"/>
+<config key="0">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp; extracellular region [GO:0005576]; plasma membrane [GO:0005886]; antigen binding [GO:0003823]; adaptive immune response [GO:0002250] &amp; extracellular region [GO:0005576]; plasma membrane [GO:0005886]; antigen binding [GO:0003823]; adaptive immune response [GO:0002250] &amp; blood microparticle [GO:0072562]; external side of plasma membrane [GO:0009897]; immunoglobulin complex, circulating [GO:0042571]; antigen binding [GO:0003823]; immunoglobulin receptor binding [GO:0034987]; B cell receptor signaling pathway [GO:0050853]; complement activation, classical pathway [GO:0006958]; defense response to bacterium [GO:0042742]; innate immune response [GO:0045087]; phagocytosis, engulfment [GO:0006911]; phagocytosis, recognition [GO:0006910]; positive regulation of B cell activation [GO:0050871] &amp; extracellular region [GO:0005576]; plasma membrane [GO:0005886]; antigen binding [GO:0003823]; serine-type endopeptidase activity [GO:0004252]; complement activation [GO:0006956]; complement activation, classical pathway [GO:0006958]; Fc-epsilon receptor signaling pathway [GO:0038095]; Fc-gamma receptor signaling pathway involved in phagocytosis [GO:0038096]; immune response [GO:0006955]; leukocyte migration [GO:0050900]; receptor-mediated endocytosis [GO:0006898]; regulation of complement activation [GO:0030449]; regulation of immune response [GO:0050776] &amp; extracellular region [GO:0005576]; plasma membrane [GO:0005886]; antigen binding [GO:0003823]; serine-type endopeptidase activity [GO:0004252]; complement activation [GO:0006956]; complement activation, classical pathway [GO:0006958]; Fc-epsilon receptor signaling pathway [GO:0038095]; Fc-gamma receptor signaling pathway involved in phagocytosis [GO:0038096]; immune response [GO:0006955]; leukocyte migration [GO:0050900]; receptor-mediated endocytosis [GO:0006898]; regulation of complement activation [GO:0030449]; regulation of immune response [GO:0050776] &amp; extracellular region [GO:0005576]; plasma membrane [GO:0005886]; antigen binding [GO:0003823]; serine-type endopeptidase activity [GO:0004252]; complement activation [GO:0006956]; complement activation, classical pathway [GO:0006958]; Fc-epsilon receptor signaling pathway [GO:0038095]; Fc-gamma receptor signaling pathway involved in phagocytosis [GO:0038096]; immune response [GO:0006955]; leukocyte migration [GO:0050900]; receptor-mediated endocytosis [GO:0006898]; regulation of complement activation [GO:0030449]; regulation of immune response [GO:0050776] &amp; blood microparticle [GO:0072562]; external side of plasma membrane [GO:0009897]; immunoglobulin complex, circulating [GO:0042571]; antigen binding [GO:0003823]; immunoglobulin receptor binding [GO:0034987]; B cell receptor signaling pathway [GO:0050853]; complement activation, classical pathway [GO:0006958]; defense response to bacterium [GO:0042742]; innate immune response [GO:0045087]; phagocytosis, engulfment [GO:0006911]; phagocytosis, recognition [GO:0006910]; positive regulation of B cell activation [GO:0050871] &amp; blood microparticle [GO:0072562]; external side of plasma membrane [GO:0009897]; immunoglobulin complex, circulating [GO:0042571]; antigen binding [GO:0003823]; immunoglobulin receptor binding [GO:0034987]; B cell receptor signaling pathway [GO:0050853]; complement activation, classical pathway [GO:0006958]; defense response to bacterium [GO:0042742]; innate immune response [GO:0045087]; phagocytosis, engulfment [GO:0006911]; phagocytosis, recognition [GO:0006910]; positive regulation of B cell activation [GO:0050871] &amp;  &amp; blood microparticle [GO:0072562]; external side of plasma membrane [GO:0009897]; immunoglobulin complex, circulating [GO:0042571]; antigen binding [GO:0003823]; immunoglobulin receptor binding [GO:0034987]; B cell receptor signaling pathway [GO:0050853]; complement activation, classical pathway [GO:0006958]; defense response to bacterium [GO:0042742]; innate immune response [GO:0045087]; phagocytosis, engulfment [GO:0006911]; phagocytosis, recognition [GO:0006910]; positive regulation of B cell activation [GO:0050871] &amp; extracellular region [GO:0005576]; plasma membrane [GO:0005886]; antigen binding [GO:0003823]; adaptive immune response [GO:0002250] &amp; blood microparticle [GO:0072562]; external side of plasma membrane [GO:0009897]; immunoglobulin complex, circulating [GO:0042571]; antigen binding [GO:0003823]; immunoglobulin receptor binding [GO:0034987]; B cell receptor signaling pathway [GO:0050853]; complement activation, classical pathway [GO:0006958]; defense response to bacterium [GO:0042742]; innate immune response [GO:0045087]; phagocytosis, engulfment [GO:0006911]; phagocytosis, recognition [GO:0006910]; positive regulation of B cell activation [GO:0050871] &amp; catalytic step 1 spliceosome [GO:0071012]; catalytic step 2 spliceosome [GO:0071013]; post-mRNA release spliceosomal complex [GO:0071014]; prespliceosome [GO:0071010]; Prp19 complex [GO:0000974]; generation of catalytic spliceosome for first transesterification step [GO:0000349]"/>
+</config>
+</config>
+<config key="1">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="endoplasmic reticulum membrane [GO:0005789]; extrinsic component of cytoplasmic side of plasma membrane [GO:0031234]; integral component of plasma membrane [GO:0005887]; intrinsic component of endoplasmic reticulum membrane [GO:0031227]; membrane [GO:0016020]; organelle membrane contact site [GO:0044232]; cadherin binding [GO:0045296]; calcium ion binding [GO:0005509]; calcium-dependent phospholipid binding [GO:0005544]; identical protein binding [GO:0042802]; phosphatidylcholine binding [GO:0031210]; phosphatidylethanolamine binding [GO:0008429]; phosphatidylinositol binding [GO:0035091]; endocytosis [GO:0006897]; endoplasmic reticulum-plasma membrane tethering [GO:0061817]; lipid transport [GO:0006869]"/>
+</config>
+</config>
+<config key="2">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp;  &amp; "/>
+</config>
+</config>
+<config key="3">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp; "/>
+</config>
+</config>
+<config key="4">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=""/>
+</config>
+</config>
+<config key="5">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="chloroplast [GO:0009507]; chloroplast stroma [GO:0009570]; plastid [GO:0009536]; 3 iron, 4 sulfur cluster binding [GO:0051538]; flavin adenine dinucleotide binding [GO:0050660]; FMN binding [GO:0010181]; glutamate synthase (NADH) activity [GO:0016040]; iron ion binding [GO:0005506]; ammonia assimilation cycle [GO:0019676]; developmental growth [GO:0048589]; glutamate biosynthetic process [GO:0006537]; L-glutamate biosynthetic process [GO:0097054]; response to cadmium ion [GO:0046686]; response to cytokinin [GO:0009735] &amp; "/>
+</config>
+</config>
+</config>
+</config>
+<config key="column_properties"/>
+</config>
+<config key="column_spec_9">
+<entry key="column_name" type="xstring" value="UniProt_Gene ontology (biological process)"/>
+<config key="element_names">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+<config key="column_type">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+</config>
+<config key="column_domain">
+<config key="possible_values">
+<entry key="array-size" type="xint" value="6"/>
+<config key="0">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp; adaptive immune response [GO:0002250] &amp; adaptive immune response [GO:0002250] &amp; B cell receptor signaling pathway [GO:0050853]; complement activation, classical pathway [GO:0006958]; defense response to bacterium [GO:0042742]; innate immune response [GO:0045087]; phagocytosis, engulfment [GO:0006911]; phagocytosis, recognition [GO:0006910]; positive regulation of B cell activation [GO:0050871] &amp; complement activation [GO:0006956]; complement activation, classical pathway [GO:0006958]; Fc-epsilon receptor signaling pathway [GO:0038095]; Fc-gamma receptor signaling pathway involved in phagocytosis [GO:0038096]; immune response [GO:0006955]; leukocyte migration [GO:0050900]; receptor-mediated endocytosis [GO:0006898]; regulation of complement activation [GO:0030449]; regulation of immune response [GO:0050776] &amp; complement activation [GO:0006956]; complement activation, classical pathway [GO:0006958]; Fc-epsilon receptor signaling pathway [GO:0038095]; Fc-gamma receptor signaling pathway involved in phagocytosis [GO:0038096]; immune response [GO:0006955]; leukocyte migration [GO:0050900]; receptor-mediated endocytosis [GO:0006898]; regulation of complement activation [GO:0030449]; regulation of immune response [GO:0050776] &amp; complement activation [GO:0006956]; complement activation, classical pathway [GO:0006958]; Fc-epsilon receptor signaling pathway [GO:0038095]; Fc-gamma receptor signaling pathway involved in phagocytosis [GO:0038096]; immune response [GO:0006955]; leukocyte migration [GO:0050900]; receptor-mediated endocytosis [GO:0006898]; regulation of complement activation [GO:0030449]; regulation of immune response [GO:0050776] &amp; B cell receptor signaling pathway [GO:0050853]; complement activation, classical pathway [GO:0006958]; defense response to bacterium [GO:0042742]; innate immune response [GO:0045087]; phagocytosis, engulfment [GO:0006911]; phagocytosis, recognition [GO:0006910]; positive regulation of B cell activation [GO:0050871] &amp; B cell receptor signaling pathway [GO:0050853]; complement activation, classical pathway [GO:0006958]; defense response to bacterium [GO:0042742]; innate immune response [GO:0045087]; phagocytosis, engulfment [GO:0006911]; phagocytosis, recognition [GO:0006910]; positive regulation of B cell activation [GO:0050871] &amp;  &amp; B cell receptor signaling pathway [GO:0050853]; complement activation, classical pathway [GO:0006958]; defense response to bacterium [GO:0042742]; innate immune response [GO:0045087]; phagocytosis, engulfment [GO:0006911]; phagocytosis, recognition [GO:0006910]; positive regulation of B cell activation [GO:0050871] &amp; adaptive immune response [GO:0002250] &amp; B cell receptor signaling pathway [GO:0050853]; complement activation, classical pathway [GO:0006958]; defense response to bacterium [GO:0042742]; innate immune response [GO:0045087]; phagocytosis, engulfment [GO:0006911]; phagocytosis, recognition [GO:0006910]; positive regulation of B cell activation [GO:0050871] &amp; generation of catalytic spliceosome for first transesterification step [GO:0000349]"/>
+</config>
+</config>
+<config key="1">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="endocytosis [GO:0006897]; endoplasmic reticulum-plasma membrane tethering [GO:0061817]; lipid transport [GO:0006869]"/>
+</config>
+</config>
+<config key="2">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp;  &amp; "/>
+</config>
+</config>
+<config key="3">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp; "/>
+</config>
+</config>
+<config key="4">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=""/>
+</config>
+</config>
+<config key="5">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="ammonia assimilation cycle [GO:0019676]; developmental growth [GO:0048589]; glutamate biosynthetic process [GO:0006537]; L-glutamate biosynthetic process [GO:0097054]; response to cadmium ion [GO:0046686]; response to cytokinin [GO:0009735] &amp; "/>
+</config>
+</config>
+</config>
+</config>
+<config key="column_properties"/>
+</config>
+<config key="column_spec_10">
+<entry key="column_name" type="xstring" value="UniProt_Gene ontology (molecular function)"/>
+<config key="element_names">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+<config key="column_type">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+</config>
+<config key="column_domain">
+<config key="possible_values">
+<entry key="array-size" type="xint" value="6"/>
+<config key="0">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp; antigen binding [GO:0003823] &amp; antigen binding [GO:0003823] &amp; antigen binding [GO:0003823]; immunoglobulin receptor binding [GO:0034987] &amp; antigen binding [GO:0003823]; serine-type endopeptidase activity [GO:0004252] &amp; antigen binding [GO:0003823]; serine-type endopeptidase activity [GO:0004252] &amp; antigen binding [GO:0003823]; serine-type endopeptidase activity [GO:0004252] &amp; antigen binding [GO:0003823]; immunoglobulin receptor binding [GO:0034987] &amp; antigen binding [GO:0003823]; immunoglobulin receptor binding [GO:0034987] &amp;  &amp; antigen binding [GO:0003823]; immunoglobulin receptor binding [GO:0034987] &amp; antigen binding [GO:0003823] &amp; antigen binding [GO:0003823]; immunoglobulin receptor binding [GO:0034987] &amp; "/>
+</config>
+</config>
+<config key="1">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="cadherin binding [GO:0045296]; calcium-dependent phospholipid binding [GO:0005544]; calcium ion binding [GO:0005509]; identical protein binding [GO:0042802]; phosphatidylcholine binding [GO:0031210]; phosphatidylethanolamine binding [GO:0008429]; phosphatidylinositol binding [GO:0035091]"/>
+</config>
+</config>
+<config key="2">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp;  &amp; "/>
+</config>
+</config>
+<config key="3">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp; "/>
+</config>
+</config>
+<config key="4">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=""/>
+</config>
+</config>
+<config key="5">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="3 iron, 4 sulfur cluster binding [GO:0051538]; flavin adenine dinucleotide binding [GO:0050660]; FMN binding [GO:0010181]; glutamate synthase (NADH) activity [GO:0016040]; iron ion binding [GO:0005506] &amp; "/>
+</config>
+</config>
+</config>
+</config>
+<config key="column_properties"/>
+</config>
+<config key="column_spec_11">
+<entry key="column_name" type="xstring" value="UniProt_Gene ontology (cellular component)"/>
+<config key="element_names">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+<config key="column_type">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+</config>
+<config key="column_domain">
+<config key="possible_values">
+<entry key="array-size" type="xint" value="6"/>
+<config key="0">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp; extracellular region [GO:0005576]; plasma membrane [GO:0005886] &amp; extracellular region [GO:0005576]; plasma membrane [GO:0005886] &amp; blood microparticle [GO:0072562]; external side of plasma membrane [GO:0009897]; immunoglobulin complex, circulating [GO:0042571] &amp; extracellular region [GO:0005576]; plasma membrane [GO:0005886] &amp; extracellular region [GO:0005576]; plasma membrane [GO:0005886] &amp; extracellular region [GO:0005576]; plasma membrane [GO:0005886] &amp; blood microparticle [GO:0072562]; external side of plasma membrane [GO:0009897]; immunoglobulin complex, circulating [GO:0042571] &amp; blood microparticle [GO:0072562]; external side of plasma membrane [GO:0009897]; immunoglobulin complex, circulating [GO:0042571] &amp;  &amp; blood microparticle [GO:0072562]; external side of plasma membrane [GO:0009897]; immunoglobulin complex, circulating [GO:0042571] &amp; extracellular region [GO:0005576]; plasma membrane [GO:0005886] &amp; blood microparticle [GO:0072562]; external side of plasma membrane [GO:0009897]; immunoglobulin complex, circulating [GO:0042571] &amp; catalytic step 1 spliceosome [GO:0071012]; catalytic step 2 spliceosome [GO:0071013]; post-mRNA release spliceosomal complex [GO:0071014]; prespliceosome [GO:0071010]; Prp19 complex [GO:0000974]"/>
+</config>
+</config>
+<config key="1">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="endoplasmic reticulum membrane [GO:0005789]; extrinsic component of cytoplasmic side of plasma membrane [GO:0031234]; integral component of plasma membrane [GO:0005887]; intrinsic component of endoplasmic reticulum membrane [GO:0031227]; membrane [GO:0016020]; organelle membrane contact site [GO:0044232]"/>
+</config>
+</config>
+<config key="2">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp;  &amp; "/>
+</config>
+</config>
+<config key="3">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp; "/>
+</config>
+</config>
+<config key="4">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=""/>
+</config>
+</config>
+<config key="5">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="chloroplast [GO:0009507]; chloroplast stroma [GO:0009570]; plastid [GO:0009536] &amp; "/>
+</config>
+</config>
+</config>
+</config>
+<config key="column_properties"/>
+</config>
+<config key="column_spec_12">
+<entry key="column_name" type="xstring" value="UniProt_Gene ontology IDs"/>
+<config key="element_names">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+<config key="column_type">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+</config>
+<config key="column_domain">
+<config key="possible_values">
+<entry key="array-size" type="xint" value="6"/>
+<config key="0">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp; GO:0002250; GO:0003823; GO:0005576; GO:0005886 &amp; GO:0002250; GO:0003823; GO:0005576; GO:0005886 &amp; GO:0003823; GO:0006910; GO:0006911; GO:0006958; GO:0009897; GO:0034987; GO:0042571; GO:0042742; GO:0045087; GO:0050853; GO:0050871; GO:0072562 &amp; GO:0003823; GO:0004252; GO:0005576; GO:0005886; GO:0006898; GO:0006955; GO:0006956; GO:0006958; GO:0030449; GO:0038095; GO:0038096; GO:0050776; GO:0050900 &amp; GO:0003823; GO:0004252; GO:0005576; GO:0005886; GO:0006898; GO:0006955; GO:0006956; GO:0006958; GO:0030449; GO:0038095; GO:0038096; GO:0050776; GO:0050900 &amp; GO:0003823; GO:0004252; GO:0005576; GO:0005886; GO:0006898; GO:0006955; GO:0006956; GO:0006958; GO:0030449; GO:0038095; GO:0038096; GO:0050776; GO:0050900 &amp; GO:0003823; GO:0006910; GO:0006911; GO:0006958; GO:0009897; GO:0034987; GO:0042571; GO:0042742; GO:0045087; GO:0050853; GO:0050871; GO:0072562 &amp; GO:0003823; GO:0006910; GO:0006911; GO:0006958; GO:0009897; GO:0034987; GO:0042571; GO:0042742; GO:0045087; GO:0050853; GO:0050871; GO:0072562 &amp;  &amp; GO:0003823; GO:0006910; GO:0006911; GO:0006958; GO:0009897; GO:0034987; GO:0042571; GO:0042742; GO:0045087; GO:0050853; GO:0050871; GO:0072562 &amp; GO:0002250; GO:0003823; GO:0005576; GO:0005886 &amp; GO:0003823; GO:0006910; GO:0006911; GO:0006958; GO:0009897; GO:0034987; GO:0042571; GO:0042742; GO:0045087; GO:0050853; GO:0050871; GO:0072562 &amp; GO:0000349; GO:0000974; GO:0071010; GO:0071012; GO:0071013; GO:0071014"/>
+</config>
+</config>
+<config key="1">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="GO:0005509; GO:0005544; GO:0005789; GO:0005887; GO:0006869; GO:0006897; GO:0008429; GO:0016020; GO:0031210; GO:0031227; GO:0031234; GO:0035091; GO:0042802; GO:0044232; GO:0045296; GO:0061817"/>
+</config>
+</config>
+<config key="2">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp;  &amp; "/>
+</config>
+</config>
+<config key="3">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp; "/>
+</config>
+</config>
+<config key="4">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=""/>
+</config>
+</config>
+<config key="5">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="GO:0005506; GO:0006537; GO:0009507; GO:0009536; GO:0009570; GO:0009735; GO:0010181; GO:0016040; GO:0019676; GO:0046686; GO:0048589; GO:0050660; GO:0051538; GO:0097054 &amp; "/>
+</config>
+</config>
+</config>
+</config>
+<config key="column_properties"/>
+</config>
+<config key="column_spec_13">
+<entry key="column_name" type="xstring" value="UniProt_Subcellular location [CC]"/>
+<config key="element_names">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+<config key="column_type">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+</config>
+<config key="column_domain">
+<config key="possible_values">
+<entry key="array-size" type="xint" value="6"/>
+<config key="0">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp; SUBCELLULAR LOCATION: Secreted {ECO:0000303|PubMed:20176268, ECO:0000303|PubMed:22158414}. Cell membrane {ECO:0000303|PubMed:20176268, ECO:0000303|PubMed:22158414}. &amp; SUBCELLULAR LOCATION: Secreted {ECO:0000303|PubMed:20176268, ECO:0000303|PubMed:22158414}. Cell membrane {ECO:0000303|PubMed:20176268, ECO:0000303|PubMed:22158414}. &amp; SUBCELLULAR LOCATION: Secreted {ECO:0000303|PubMed:20176268, ECO:0000303|PubMed:22158414}. Cell membrane {ECO:0000303|PubMed:20176268, ECO:0000303|PubMed:22158414}. &amp; SUBCELLULAR LOCATION: Secreted {ECO:0000303|PubMed:20176268, ECO:0000303|PubMed:22158414}. Cell membrane {ECO:0000303|PubMed:20176268, ECO:0000303|PubMed:22158414}. &amp; SUBCELLULAR LOCATION: Secreted {ECO:0000303|PubMed:20176268, ECO:0000303|PubMed:22158414}. Cell membrane {ECO:0000303|PubMed:20176268, ECO:0000303|PubMed:22158414}. &amp; SUBCELLULAR LOCATION: Secreted {ECO:0000303|PubMed:20176268, ECO:0000303|PubMed:22158414}. Cell membrane {ECO:0000303|PubMed:20176268, ECO:0000303|PubMed:22158414}. &amp; SUBCELLULAR LOCATION: Secreted {ECO:0000303|PubMed:20176268, ECO:0000303|PubMed:22158414}. Cell membrane {ECO:0000303|PubMed:20176268, ECO:0000303|PubMed:22158414}. &amp;  &amp;  &amp; SUBCELLULAR LOCATION: Secreted {ECO:0000303|PubMed:20176268, ECO:0000303|PubMed:22158414}. Cell membrane {ECO:0000303|PubMed:20176268, ECO:0000303|PubMed:22158414}. &amp; SUBCELLULAR LOCATION: Secreted {ECO:0000303|PubMed:20176268, ECO:0000303|PubMed:22158414}. Cell membrane {ECO:0000303|PubMed:20176268, ECO:0000303|PubMed:22158414}. &amp; SUBCELLULAR LOCATION: Secreted {ECO:0000303|PubMed:20176268, ECO:0000303|PubMed:22158414}. Cell membrane {ECO:0000303|PubMed:20176268, ECO:0000303|PubMed:22158414}. &amp; "/>
+</config>
+</config>
+<config key="1">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="SUBCELLULAR LOCATION: Cell membrane; Peripheral membrane protein. Endoplasmic reticulum membrane; Multi-pass membrane protein. Note=Detected at sites of contact between the endoplasmic reticulum membrane and the cell membrane. Recruited to the cell membrane via the third C2 domain."/>
+</config>
+</config>
+<config key="2">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp;  &amp; "/>
+</config>
+</config>
+<config key="3">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp; "/>
+</config>
+</config>
+<config key="4">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=""/>
+</config>
+</config>
+<config key="5">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="SUBCELLULAR LOCATION: Plastid, chloroplast {ECO:0000269|PubMed:18431481}. &amp; "/>
+</config>
+</config>
+</config>
+</config>
+<config key="column_properties"/>
+</config>
+<config key="column_spec_14">
+<entry key="column_name" type="xstring" value="UniProt_Protein families"/>
+<config key="element_names">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+<config key="column_type">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+</config>
+<config key="column_domain">
+<config key="possible_values">
+<entry key="array-size" type="xint" value="7"/>
+<config key="0">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp;  &amp;  &amp;  &amp;  &amp;  &amp;  &amp;  &amp;  &amp;  &amp;  &amp;  &amp;  &amp; "/>
+</config>
+</config>
+<config key="1">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="Extended synaptotagmin family"/>
+</config>
+</config>
+<config key="2">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="GOLGA6 family &amp; GOLGA6 family &amp; GOLGA6 family"/>
+</config>
+</config>
+<config key="3">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp; "/>
+</config>
+</config>
+<config key="4">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=""/>
+</config>
+</config>
+<config key="5">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp;  &amp; "/>
+</config>
+</config>
+<config key="6">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="Glutamate synthase family &amp; "/>
+</config>
+</config>
+</config>
+</config>
+<config key="column_properties"/>
+</config>
+<config key="column_spec_15">
+<entry key="column_name" type="xstring" value="UniProt_Interacts with"/>
+<config key="element_names">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+<config key="column_type">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+</config>
+<config key="column_domain">
+<config key="possible_values">
+<entry key="array-size" type="xint" value="5"/>
+<config key="0">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp;  &amp;  &amp;  &amp;  &amp;  &amp;  &amp;  &amp;  &amp;  &amp;  &amp;  &amp;  &amp; "/>
+</config>
+</config>
+<config key="1">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="Itself; Q9BSJ8; A0FGR9"/>
+</config>
+</config>
+<config key="2">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp;  &amp; "/>
+</config>
+</config>
+<config key="3">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp; "/>
+</config>
+</config>
+<config key="4">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=""/>
+</config>
+</config>
+</config>
+</config>
+<config key="column_properties"/>
+</config>
+<config key="column_spec_16">
+<entry key="column_name" type="xstring" value="UniProt_Sequence"/>
+<config key="element_names">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+<config key="column_type">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+</config>
+<config key="column_domain">
+<config key="possible_values">
+<entry key="array-size" type="xint" value="7"/>
+<config key="0">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="MKHLWFFLLLVAAPRWVLSQLQLQESGPGLVKPSQTLSLTCTVSGGSISSGDYYWSWIRQPPGKGLEWIGYIYYSGSTYYNPSLKSRVTISVDTSKNQFSLKLSSVTAADTAVYYC &amp; MKHLWFFLLLVAAPRWVLSQVQLQESGPGLVKPSETLSLTCTVSGYSISSGYYWGWIRQPPGKGLEWIGSIYHSGSTYYNPSLKSRVTISVDTSKNQFSLKLSSVTAADTAVYYCAR &amp; MKHLWFFLLLVAAPRWVLSQVQLQESGPGLVKPSQTLSLTCTVSGGSISSGDYYWSWIRQPPGKGLEWIGYIYYSGSTYYNPSLKSRVTISVDTSKNQFSLKLSSVTAADTAVYYCAR &amp; MKHLWFFLLLVAAPRWVLSQVQLQESGPGLVKPSETLSLTCTVSGGSVSSGSYYWSWIRQPPGKGLEWIGYIYYSGSTNYNPSLKSRVTISVDTSKNQFSLKLSSVTAADTAVYYCAR &amp; MKHLWFFLLLVAAPRWVLSQVQLQESGPGLVKPSETLSLTCTVSGGSISSYYWSWIRQPPGKGLEWIGYIYYSGSTNYNPSLKSRVTISVDTSKNQFSLKLSSVTAADTAVYYCAR &amp; MDLLHKNMKHLWFFLLLVAAPRWVLSQVQLQQWGAGLLKPSETLSLTCAVYGGSFSGYYWSWIRQPPGKGLEWIGEINHSGSTNYNPSLKSRVTISVDTSKNQFSLKLSSVTAADTAVYYCAR &amp; MDLMCKKMKHLWFFLLLVAAPRWVLSQLQLQESGPGLVKPSETLSLTCTVSGGSISSSSYYWGWIRQPPGKGLEWIGSIYYSGSTYYNPSLKSRVTISVDTSKNQFSLKLSSVTAADTAVYYCAR &amp; MKHLWFFLLLVAAPRWVLSQVQLQESGPGLVKPSDTLSLTCAVSGYSISSSNWWGWIRQPPGKGLEWIGYIYYSGSTYYNPSLKSRVTMSVDTSKNQFSLKLSSVTAVDTAVYYCAR &amp; MKHLWFFLLLVAAPRWVLSQVQLQESGPGLVKPSETLSLTCVVSGGSISSSNWWSWVRQPPGKGLEWIGEIYHSGSPNYNPSLKSRVTISVDKSKNQFSLKLSSVTAADTAVYYCAR &amp; MKHLWFFLLLVAAPRWVLSQVQLQESGPGLVKPSETLSLTCVVSGGSISSSNWWSWVRQPPGKGLEWIGEIYHSGSPNYNPSLKSRVTISVDKSKNQFSLKLSSVTAADRAVYYCAR &amp; MKHLWFFLLLVAAPRWVLSQVQLQESGPGLVKPSGTLSLTCAVSGGSISSSNWWSWVRQPPGKGLEWIGEIYHSGSTNYNPSLKSRVTISVDKSKNQFSLKLSSVTAADTAVYYCAR &amp; MKHLWFFLLLVAAPRWVLSQVQLQESGPGLVKPSQTLSLTCTVSGGSISSGGYYWSWIRQHPGKGLEWIGYIYYSGSTYYNPSLKSLVTISVDTSKNQFSLKLSSVTAADTAVYYCAR &amp; MKHLWFFLLLVAAPRWVLSQLQLQESGSGLVKPSQTLSLTCAVSGGSISSGGYSWSWIRQPPGKGLEWIGYIYHSGSTYYNPSLKSRVTISVDRSKNQFSLKLSSVTAADTAVYYCAR &amp; MAISKDLYPSQEDLLYEEELLRNQFSLKLWWRYLIAKAESPFKKRFIIYERALKALPGSYKLWYAYLRERLDIVRNLPVTHPQYDSLNNTFERGLVTMHKMPRIWVMYLQTLTVQQLITRTRRTFDRALCALPVTQHDRIWEPYLVFVSQNGIPIETSLRVYRRYLMYDPSHIEEFIEFLVKSERWQESAERLASVLNDDKFYSIKGKTKHKLWLELCELLVHHANVISGLNVDAIIRGGIRKFTDEVGMLWTSLADYYIRKNLLEKARDIYEEGMMKVVTVRDFSVIFDVYSRFEESTVAKKMEMMSSSDEEDENEENGVEDDEEDVRLNFNLSVKELQRKILNGFWLNDDNDVDLRLARLEELMNRRPALANSVLLRQNPHNVEQWHRRVKIFEGNAAKQILTYTEAVRTVDPMKAVGKPHTLWVAFAKLYENHKDLVNTRVIFDKAVQVNYKTVDHLASVWCEWAEMELRHKNFKGALELMRRATAVPTVEVRRRVAADGNEPVQMKLHRSLRLWSFYVDLEESLGTLESTRAVYEKILDLRIATPQIIMNYAFLLEENKYFEDAFKVYERGVKIFKYPHVKDIWVTYLTKFVKRYGKTKLERARELFEHAVSMAPSDAVRTLYLQYAKLEEDYGLAKRAMKVYEEATKKVPEGQKLEMYEIYISRAAEIFGVPRTREIYEQAIESGLPHKDVKIMCIKFAELERSLGEIDRARALYKYSSQFADPRSDPEFWNKWHEFEVQHGNEDTYREMLRIKRSVSASYSQTHFILPENMMQKDKLLDVEDAKGELKRAGLPEDEMAALERQLLSTTTPTEPAKDGGRRVGFVSAGVISQSGENEGKPVTGNGEDIELPDESDDESDGDDHVEISQKEVPAAVFGGLARKRDEDGEEAGEDGAAQKLGALERIKRQKLNQ"/>
+</config>
+</config>
+<config key="1">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="MTANRDAALSSHRHPGCAQRPRTPTFASSSQRRSAFGFDDGNFPGLGERSHAPGSRLGARRRAKTARGLRGHRQRGAGAGLSRPGSARAPSPPRPGGPENPGGVLSVELPGLLAQLARSFALLLPVYALGYLGLSFSWVLLALALLAWCRRSRGLKALRLCRALALLEDEERVVRLGVRACDLPAWVHFPDTERAEWLNKTVKHMWPFICQFIEKLFRETIEPAVRGANTHLSTFSFTKVDVGQQPLRINGVKVYTENVDKRQIILDLQISFVGNCEIDLEIKRYFCRAGVKSIQIHGTMRVILEPLIGDMPLVGALSIFFLRKPLLEINWTGLTNLLDVPGLNGLSDTIILDIISNYLVLPNRITVPLVSEVQIAQLRFPVPKGVLRIHFIEAQDLQGKDTYLKGLVKGKSDPYGIIRVGNQIFQSRVIKENLSPKWNEVYEALVYEHPGQELEIELFDEDPDKDDFLGSLMIDLIEVEKERLLDEWFTLDEVPKGKLHLRLEWLTLMPNASNLDKVLTDIKADKDQANDGLSSALLILYLDSARNLPSGKKISSNPNPVVQMSVGHKAQESKIRYKTNEPVWEENFTFFIHNPKRQDLEVEVRDEQHQCSLGNLKVPLSQLLTSEDMTVSQRFQLSNSGPNSTIKMKIALRVLHLEKRERPPDHQHSAQVKRPSVSKEGRKTSIKSHMSGSPGPGGSNTAPSTPVIGGSDKPGMEEKAQPPEAGPQGLHDLGRSSSSLLASPGHISVKEPTPSIASDISLPIATQELRQRLRQLENGTTLGQSPLGQIQLTIRHSSQRNKLIVVVHACRNLIAFSEDGSDPYVRMYLLPDKRRSGRRKTHVSKKTLNPVFDQSFDFSVSLPEVQRRTLDVAVKNSGGFLSKDKGLLGKVLVALASEELAKGWTQWYDLTEDGTRPQAMT"/>
+</config>
+</config>
+<config key="2">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="MLMWPQPHLPTHPHLPTHPHLPTHPHLPTHPHLPTHPHLPTHPHLPTHPMMSKETRQSKLAEAKEQLTDHHPQTNPSVGTAASDTKKKKINNGTNPETTTSGGCHSPEDEQKASHQHQEALRRELEAQVHTIRILTCQKTELQMALYYSQHAVKQLEGEARDLISRLHDSWKFAGELEQALSAVATQKKKADRYIEELTKERDALSLELYRNTITDEELKEKNAKLQEKLQLVESEKSEIQLNVKELKRKLERAKLLLPQQQLQAEADHLGKELQSVSAKLQAQVEENELWNRLNQQQEEKMWRQEEKIQEWEEKIQEQEEKIREQEEKIREQEEKMRRQEEMMWEKEEKMRRQEEMMWEKEEKMRRLEEMMWEKEEKIRELEEKMHEQEKIREQEEKRQEEEKIREQEKRQEQEAKMWRQEEKIREQEEKIREQEKKMWRQEEKIHEQEKIREEEKRQEQEEMWRQEEKIREQEEIWRQKEKMHEQEKIRKQEEKVWRQEEKMHDQEEKIREQEEKMWRQEEKIREQEEKIREQEEKIREQEEMMQEQEEKMGEQEEKMQEQEKMRRQEEKIREQEEKIREQKEKIREQEEKIWEQEEKIREQEEMMQEQEEKMWEQEEKMCEQEEKMQEQEEKMRRQEEKMWEQEVRLRQQEEKMQEHQEHLEAAI &amp; MLMWPQPHLPTHPHLPTHPHLPTHPHLPTHPHLPTHPMMSKETRQSKLAEAKEQLTDHHPQTNPSVGTAASDTKKKKINNGTNPETTTSGGCHSPEDEQKASHQHQEALRRELEAQVHTIRILTCQKTELQMALYYSQHAVKQLEGEARDLISRLHDSWKFAGELEQALSAVATQKKKADRYIEELTKERDALSLELYRNTITDEELKEKNAELQEKLQLVESEKSEIQLNVKELKRKLERAKLLLPQQQLQAEADHLGKELQSVSAKLQAQVEENELWNRLNQQQEEKMWRQEEKIQEWEEKIQEQEEKIREQEEKIREQEEKMRRQEEMMWEKEEKMRRQEEMMWEKEEKMRRQEEMMWEKEEKIRELEEKMHEQEKIREQEEKRQEEEKIREQEKRQEQEAKMWRQEEKIREQEEKIREQEKKMWRQEEKIHEQEKIREEEKRQEQEEMWRQEEKIREQEEIWRQKEKMHEQEEKIRKQEEKVWRQEEKIREQEEKIREQEEKMWRQEEKIREQEEMWREEEKMHEQEKIWEEEKRQEQEDKMWRQEEKIREQEEKVWRQEEKIREQEEKRQEQEEKMWKQEEKIREQEEKIREQEEKIREQEEKIREQEEMTQEQEEKMGEQEEKMCEQEEKMQEQEETMWRQEEKIREQEKKIREQEEKIREQEEMMQEQEEKMWEQEEKMCEQEEKMQEQEEKMRRQEEKMWEQEVRLRQQEEKMQEH &amp; MMSKETRQSKLAEAKEQLTDHHPQTNPSVGTAASDTKKKKINNGTSPETTTSGGCHSPEDEQKASHQHQEALRRELEAQVHTIRILTCQKTELQMALYYSQHAVKQLEGEARDLISRLHDSWKFAGELEQALSAVTTQKKKADRYIEELTKERDALSLELYRNTITDEELKEKNAKLQEKLQLVESEKSEIQLNVKELKRKLERAKLLLPQQLQAEADHLGKELQSVSAKLQAQVEENELWNRLNQQQEEKMWRQEEKIQEWEEKIQEQEEKIREQEEKIREQEEKMRRQEEMMWEKEEKMRRQEEMMWEKEEKIRELEEKMHEQEKIREQEEKRQEEEKIREQEKRQEQEAKMWRQEEKIREQEEKIREQEKKMWRQEEKIHEQEKIREEEKRQEQEEMWRQEEKIREQEEIWRQKEKMHEQEEKIRKQEEKVWRQEEKMHDQEEKIREQEEKVWRQEEKIREQEKKREQEEKMWRQEEKIREQEEKIREQEEMWREEEKMHEQEKIWEEEKRQEQEDKMWRQEEKIREQEEKVWRQEEKIREQEEKRQEQEEKMWKQEEKIREQEEKIREQEEKIREQEEKIREQEEMMQEQEEKMGEQEEKMQEQEKMRRQEEKIREQEEKIREQKEKIREQEEKIWEQEEKIREQEEMMQEQEEKMGEQEEKIWEQEEKMQEQEEKMRRQEEKIREQEKKIREQEEKIREQEEMMQEQEEKMGEQEEKMQEQEEKMRRQEEKIREQEKKIREQEEKIREQEEMMQEQEEKMWEQEEKMCEQEEKMQEQEEKMRRQEEKMWEQEVRLRQQEEKMQEH"/>
+</config>
+</config>
+<config key="3">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp; MELLCDDIGTSMCLTPSEPDLPVSEDFGEYMRSRLSQSKRPDHEHLCAVIEELSKTLAEDNHRRTPVAYFACTCRSLDSLFSAHAEPPVDVVQPHIVILSLVFPKVSAGVLKRDGLALRLVLNVLRLKSATPECLISGLKCLVHLLTTVESIMVNEGSDSYNILLNFVTHSDGKVRKLASSCLRDVLQKSHGTKAWQSVSGAITEMFQNYLDLAHKSEVGSTEGARGAKQVLYILSTLKECLALMSKKHIATLIEGFKVLMILRDPYITRPVIDSLNAVCLNPTSEVPVEALLEVLSLAAGLFSGHETSADAMTFTARLLKVGMTRSFTLNRDLCVVKLPSVFNGLNDIIASEHEEAIFAATDALKSLIFSCIDESLIREGVNEIRNSNLNVRKPSPTVIEKLCATVESLLDYKYHAVWDMAFQVVSAMFDKLGEHSAYFMRNTLQGLSDMQDLPDEGFPYRKQLHECVGSALGAMGPETFLSIVRLNLEANDLSEVKVWLFPILKQYTVGGRLSFFTEAIFSMVETMSHKAQKLKLQGLPVASRSVDSLVYSLWALLPSFCNYPVDTVESFADLGRILCGVLQTQAETHGIICASLNILIQQNKEVVEGKEVPTNDASPAMQRATARYDSQHAAANLKVLRLCAPKLLDVLSRIFHECSKDDGGSLQSAIGNLASIAEKKTVSKLLFKTLQELLEATKTAIAQDESPVSGMDVDNTADKNSSSNLRARLFDLLVSLLPGLDGQEVDTIFSSLKPAMQDSKGLIQKKAYKVLSVILKSSDGFVSKNLEELLVLMHNICHVSAKRHKLDCLYFLLAHASRTDDLKERKDIVSSFLPEVILALKEVNKKTRNRAYDVLVQIGHAYADEENGGDNEKLHGYFDMVVGCLAGEKPQMISAAVKGVARLTYEFSDLISSAYNLLPSTFLLLQRKNKEITKANLGLLKVLVAKSPVEGLHANLKSMVEGLLKWPEGTKNLFKAKVRLLLEMLIKKCGTEAVKSVMPEEHMKLLTNIRKIKERKEKKYAAGSDISKSQHSKDTSSKVSRWNDTKIFSDVYADSEDSDGDDMDAESHGRSKASSLLKSKASALRSKKSRNQSHLEVDESDDEPLDLMDQHKTRLALRSSELRKRKADSDEEAEFDVEGRLVIREGERSKRKELSDADSDAKSSKGSRFSGNSSKKNQKRMKTSESGYAYTGKEYASKKASGDLKKKDKLEPYAYWPLDRKMMSRRPEQRAVAVRGMSSVVKMAKKMEGKSAAEALATTKFKKFKRSGQKKSAGKKKNK"/>
+</config>
+</config>
+<config key="4">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=""/>
+</config>
+</config>
+<config key="5">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp;  &amp; "/>
+</config>
+</config>
+<config key="6">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="MSAASSSSVLHLRTNQQLLSLRSLKNSTSVASQLAVTSGVSRRRSCTARCSVKKPVIPESPFLGTRVRRSGSETLQFWRSDGPGRSAKLRTVVKSSFSAVPEKPLGLYDPSYDKDSCGVGFVAELSGETTRKTVTDSLEMLIRMTHRGACGCESNTGDGAGILVGLPHDFYAEAATELGFVLPSAGNYAVGMFFLPTVESRREESKNVFTKVAESLGHSVLGWRLVPTDNSGLGNSALQTEPIIAQVFLTPTTKSKADFEQQMYILRRVSMVAIRAALNLQHGAMKDFYICSLSSRTIVYKGQLKPDQLKDYYYADLGSERFTSYMALVHSRFSTNTFPSWDRAQPMRVLGHNGEINTLRGNVNWMRAREGLLKCNELGLSKKELKKLLPIVDVSSSDSGAFDGVLELLVRAGRSLPEAVMMMIPEAWQNDKNIDPSRKEFYEYLSALMEPWDGPALISFTDGRYLGATLDRNGLRPGRFYITHSGRVIMASEVGVVDVPPEDVMRKGRLNPGMMLLVDFEKHIVVDDDALKQQYSLARPYGEWLKRQKIELKDIIESVPEAERIAPSISGVVPASNDDDSMESMGIHGLLSPLKAFGYTVEALEMLLLPMAKDGSEALGSMGNDTPLAVMSNREKLCFEYFKQMFAQVTNPPIDPIREKIVTSMECMIGPEGDLTETTEEQCHRLSLKGPLLKIEEMEAIKKMNYRGWRTKVLDITYAKERGTKGLEETLDRICDEANEAIKEGYTLLVLSDRAFSATRVAVSSLMAVGAVHHHLVKTLARTQVGLVVESAEPREVHHFCTLVGFGADAICPYLAVEAVYRLQVDGKIPPKSNGEFHSKEELVKKYYKASNYGMMKVLAKMGISTLASYKGAQIFEALGLSSEVIQKCFAGTPSRVEGATFEMLARDGLQLHELAFPTRGYAPGSAEASALTNPGNYHWRKNGEIHLNDPLAIAKLQEAARTNSVAAYKEYSKRINELNKQSNLRGLMKFKDADVKIPLDEVEPASEIVKRFCTGAMSYGSISLEAHTTLAMAMNKLGGKSNTGEGGELPSRMEPLADGSRNPKRSSIKQIASGRFGVSSYYLTNADELQIKMAQGAKPGEGGELPGHKVIGDIAITRNSTAGVGLISPPPHHDIYSIEDLAQLIHDLKNANPGARISVKLVSEAGVGVIASGVVKGHADHVLIAGHDGGTGASRWTGIKNAGLPWELGLAETHQTLVANDLRGRTVLQTDGQLKTGRDVAVAALLGAEEFGFSTAPLITLGCIMMRKCHKNTCPVGIATQDPVLREKFAGEPEHVINFFFMLAEEVREIMSGLGFRTVTEMIGRADMLELDREVVKNNDKLENIDLSLLLRPAAEIRPGAAQYCVQKQDHGLDMALDQELIALSKSALEKSLPVYIETPICNVNRAVGTMLSHEVTKRYHLTGLPKDTIHIKFTGSAGQSLGAFLCPGIMLELEGDSNDYVGKGLSGGKVVVYPPKGSSFDPKENIVIGNVALYGATSGEAYFNGMAAERFSVRNSGAKAVVEGLGDHGCEYMTGGTVVVLGKTGRNFAAGMSGGIAYVLDVDGKFNTRCNLELVDLDKVEDEEDKMTLKMMIQQHQRHTNSQLAQEVLADFENLLPKFIKVFPRDYKRVLSAMKHEEVSKQAIERASEEADETEEKELEEKDAFAELKNMAAASSKEEMSGNGVAAEARPSKVDNAVKNGGFIAYEREGVKYRDPNVRLNDWNEVMEESKPGPLLTTQSARCMDCGTPFCHQENSGCPLGNKIPEFNELVYQNRWQEALNRLLETNNFPEFTGRVCPAPCEGSCVLGIIENPVSIKSIECAIIDKAFEEGWMVPRPPLKRTGKKVAIIGSGPAGLAAADQLNKMGHLVTVYERSDRIGGLMMYGVPNMKTDKIDVVQRRVDLMTKEGINFVVNANIGKDPSYSLDGLKEENDAIVLAVGSTKPRDLPVPGRDLSGVHFAMEFLHANTKSLLDSNHEDGNYISAKGKKVVVIGGGDTGTDCIGTSIRHGCTNIVNLELLPQPPSTRAPGNPWPQWPRVFRIDYGHQEATTKFGKDPRTYEVLTKRFIGDDNGNVKGLELVRVSWEKDETGRFQFKEIEGSEEIIEADLVFLAMGFLGPEPTLAEKLGLECDNRSNFKAEYGRFSTTVEGVFAAGDCRRGQSLVVWAISEGRQAADQVDKFLTKTDDDEDAKLQQDLNQMKHNTITN &amp; "/>
+</config>
+</config>
+</config>
+</config>
+<config key="column_properties"/>
+</config>
+<config key="column_spec_17">
+<entry key="column_name" type="xstring" value="UniProt_Cross-reference (InterPro)"/>
+<config key="element_names">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+<config key="column_type">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+</config>
+<config key="column_domain">
+<config key="possible_values">
+<entry key="array-size" type="xint" value="7"/>
+<config key="0">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="IPR007110;IPR036179;IPR013783;IPR013106; &amp; IPR007110;IPR036179;IPR013783;IPR013106; &amp; IPR007110;IPR036179;IPR013783;IPR013106; &amp; IPR007110;IPR036179;IPR013783;IPR013106; &amp; IPR007110;IPR036179;IPR013783;IPR013106; &amp; IPR007110;IPR036179;IPR013783;IPR013106; &amp; IPR007110;IPR036179;IPR013783;IPR013106; &amp; IPR007110;IPR036179;IPR013783;IPR013106; &amp; IPR007110;IPR036179;IPR013783;IPR013106; &amp; IPR007110;IPR036179;IPR013783;IPR013106; &amp; IPR007110;IPR036179;IPR013783;IPR013106; &amp; IPR007110;IPR036179;IPR013783;IPR013106; &amp; IPR007110;IPR036179;IPR013783;IPR013106; &amp; IPR003107;IPR013026;IPR011990;"/>
+</config>
+</config>
+<config key="1">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="IPR000008;IPR035892;IPR037752;IPR037733;IPR037749;IPR031468;IPR039010;"/>
+</config>
+</config>
+<config key="2">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="IPR026737; &amp; IPR026737; &amp; IPR026737;"/>
+</config>
+</config>
+<config key="3">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp; IPR016024;IPR012978;"/>
+</config>
+</config>
+<config key="4">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=""/>
+</config>
+</config>
+<config key="5">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp;  &amp; "/>
+</config>
+</config>
+<config key="6">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="IPR013785;IPR028261;IPR036188;IPR023753;IPR017932;IPR002489;IPR036485;IPR006982;IPR012220;IPR002932;IPR006005;IPR009051;IPR029055; &amp; "/>
+</config>
+</config>
+</config>
+</config>
+<config key="column_properties"/>
+</config>
+<config key="column_spec_18">
+<entry key="column_name" type="xstring" value="UniProt_Cross-reference (Pfam)"/>
+<config key="element_names">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+<config key="column_type">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+</config>
+<config key="column_domain">
+<config key="possible_values">
+<entry key="array-size" type="xint" value="6"/>
+<config key="0">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="PF07686; &amp; PF07686; &amp; PF07686; &amp; PF07686; &amp; PF07686; &amp; PF07686; &amp; PF07686; &amp; PF07686; &amp; PF07686; &amp; PF07686; &amp; PF07686; &amp; PF07686; &amp; PF07686; &amp; "/>
+</config>
+</config>
+<config key="1">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="PF00168;PF17047;"/>
+</config>
+</config>
+<config key="2">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp;  &amp; "/>
+</config>
+</config>
+<config key="3">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp; PF08161;"/>
+</config>
+</config>
+<config key="4">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=""/>
+</config>
+</config>
+<config key="5">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="PF14691;PF00310;PF04898;PF01645;PF01493;PF07992; &amp; "/>
+</config>
+</config>
+</config>
+</config>
+<config key="column_properties"/>
+</config>
+<config key="column_spec_19">
+<entry key="column_name" type="xstring" value="UniProt_Cross-reference (IntAct)"/>
+<config key="element_names">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+<config key="column_type">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+</config>
+<config key="column_domain">
+<config key="possible_values">
+<entry key="array-size" type="xint" value="5"/>
+<config key="0">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp;  &amp;  &amp;  &amp;  &amp;  &amp;  &amp;  &amp;  &amp;  &amp;  &amp;  &amp;  &amp; Q9LKU3;"/>
+</config>
+</config>
+<config key="1">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="A0FGR8;"/>
+</config>
+</config>
+<config key="2">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp;  &amp; "/>
+</config>
+</config>
+<config key="3">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=" &amp; "/>
+</config>
+</config>
+<config key="4">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=""/>
+</config>
+</config>
+</config>
+</config>
+<config key="column_properties"/>
+</config>
+</config>

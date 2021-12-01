@@ -1,0 +1,624 @@
+
+{
+    "type":"object",
+    "properties":{
+        "column-selection-645:624":{
+            "type":"object",
+            "properties":{
+                "column":{
+                    "type":"string",
+                    "default":"id"
+                }
+            },
+            "description":"Top Input table column containing IDs you want to look up in the bottom Input table",
+            "example":{
+                "column":"id"
+            }
+        },
+        "column-filter-640:627":{
+            "type":"object",
+            "properties":{
+                "columns":{
+                    "type":"array",
+                    "items":{
+                        "type":"string",
+                        "default":"Sequence"
+                    }
+                }
+            },
+            "description":"select columns which should be added from bottom Input table",
+            "example":{
+                "columns":[
+                    "Sequence",
+                    "N-term cleavage window",
+                    "C-term cleavage window",
+                    "Amino acid before",
+                    "First amino acid",
+                    "Second amino acid",
+                    "Second last amino acid",
+                    "Last amino acid",
+                    "Amino acid after",
+                    "A Count",
+                    "R Count",
+                    "N Count",
+                    "D Count",
+                    "C Count",
+                    "Q Count",
+                    "E Count",
+                    "G Count",
+                    "H Count",
+                    "I Count",
+                    "L Count",
+                    "K Count",
+                    "M Count",
+                    "F Count",
+                    "P Count",
+                    "S Count",
+                    "T Count",
+                    "W Count",
+                    "Y Count",
+                    "V Count",
+                    "U Count",
+                    "O Count",
+                    "Length",
+                    "Missed cleavages",
+                    "Mass",
+                    "Proteins",
+                    "Leading razor protein",
+                    "Start position",
+                    "End position",
+                    "Gene names",
+                    "Protein names",
+                    "Unique (Groups)",
+                    "Unique (Proteins)",
+                    "Charges",
+                    "PEP",
+                    "Score",
+                    "Identification type 10000-1_1",
+                    "Identification type 10000-1_2",
+                    "Identification type 10000-1_3",
+                    "Identification type 1000-1_1",
+                    "Identification type 1000-1_2",
+                    "Identification type 1000-1_3",
+                    "Identification type 100-1_1",
+                    "Identification type 100-1_2",
+                    "Identification type 100-1_3",
+                    "Identification type 10-1_1",
+                    "Identification type 10-1_2",
+                    "Identification type 10-1_3",
+                    "Identification type 1-1_1",
+                    "Identification type 1-1_2",
+                    "Identification type 1-1_3",
+                    "Identification type 2-1_1",
+                    "Identification type 2-1_2",
+                    "Identification type 2-1_3",
+                    "Identification type 5-1_1",
+                    "Identification type 5-1_2",
+                    "Identification type 5-1_3",
+                    "Fraction Average",
+                    "Fraction Std. Dev.",
+                    "Fraction 1",
+                    "Experiment 10000-1_1",
+                    "Experiment 10000-1_2",
+                    "Experiment 10000-1_3",
+                    "Experiment 1000-1_1",
+                    "Experiment 1000-1_2",
+                    "Experiment 1000-1_3",
+                    "Experiment 100-1_1",
+                    "Experiment 100-1_2",
+                    "Experiment 100-1_3",
+                    "Experiment 10-1_1",
+                    "Experiment 10-1_2",
+                    "Experiment 10-1_3",
+                    "Experiment 1-1_1",
+                    "Experiment 1-1_2",
+                    "Experiment 1-1_3",
+                    "Experiment 2-1_1",
+                    "Experiment 2-1_2",
+                    "Experiment 2-1_3",
+                    "Experiment 5-1_1",
+                    "Experiment 5-1_2",
+                    "Experiment 5-1_3",
+                    "Intensity",
+                    "Intensity 10000-1_1",
+                    "Intensity 10000-1_2",
+                    "Intensity 10000-1_3",
+                    "Intensity 1000-1_1",
+                    "Intensity 1000-1_2",
+                    "Intensity 1000-1_3",
+                    "Intensity 100-1_1",
+                    "Intensity 100-1_2",
+                    "Intensity 100-1_3",
+                    "Intensity 10-1_1",
+                    "Intensity 10-1_2",
+                    "Intensity 10-1_3",
+                    "Intensity 1-1_1",
+                    "Intensity 1-1_2",
+                    "Intensity 1-1_3",
+                    "Intensity 2-1_1",
+                    "Intensity 2-1_2",
+                    "Intensity 2-1_3",
+                    "Intensity 5-1_1",
+                    "Intensity 5-1_2",
+                    "Intensity 5-1_3",
+                    "Reverse",
+                    "Potential contaminant",
+                    "id",
+                    "Protein group IDs",
+                    "Mod. peptide IDs",
+                    "Evidence IDs",
+                    "MS/MS IDs",
+                    "Best MS/MS",
+                    "Deamidation (NQ) site IDs",
+                    "Oxidation (M) site IDs",
+                    "MS/MS Count",
+                    "LFQ intensity 10000-1_1",
+                    "LFQ intensity 10000-1_2",
+                    "LFQ intensity 10000-1_3",
+                    "LFQ intensity 1000-1_1",
+                    "LFQ intensity 1000-1_2",
+                    "LFQ intensity 1000-1_3",
+                    "LFQ intensity 100-1_1",
+                    "LFQ intensity 100-1_2",
+                    "LFQ intensity 100-1_3",
+                    "LFQ intensity 10-1_1",
+                    "LFQ intensity 10-1_2",
+                    "LFQ intensity 10-1_3",
+                    "LFQ intensity 1-1_1",
+                    "LFQ intensity 1-1_2",
+                    "LFQ intensity 1-1_3",
+                    "LFQ intensity 2-1_1",
+                    "LFQ intensity 2-1_2",
+                    "LFQ intensity 2-1_3",
+                    "LFQ intensity 5-1_1",
+                    "LFQ intensity 5-1_2",
+                    "LFQ intensity 5-1_3"
+                ]
+            }
+        },
+        "column-filter-0:627":{
+            "type":"object",
+            "properties":{
+                "columns":{
+                    "type":"array",
+                    "items":{
+                        "type":"string",
+                        "default":"Protein ID"
+                    }
+                }
+            },
+            "description":"select columns which should be added from bottom Input table",
+            "example":{
+                "columns":[
+                    "Protein ID",
+                    "Entry",
+                    "Entry name",
+                    "Status",
+                    "Protein names",
+                    "Gene names",
+                    "Organism",
+                    "Gene ontology (GO)",
+                    "Gene ontology (biological process)",
+                    "Gene ontology (molecular function)",
+                    "Gene ontology (cellular component)",
+                    "Gene ontology IDs",
+                    "Subcellular location [CC]",
+                    "Protein families",
+                    "Interacts with",
+                    "Sequence",
+                    "Cross-reference (InterPro)",
+                    "Cross-reference (Pfam)",
+                    "Cross-reference (IntAct)"
+                ]
+            }
+        },
+        "column-selection-645:626":{
+            "type":"object",
+            "properties":{
+                "column":{
+                    "type":"string",
+                    "default":"id"
+                }
+            },
+            "description":"Bottom Input table column containing IDs you want to look up values for (one ID per row necessary!)",
+            "example":{
+                "column":"id"
+            }
+        },
+        "string-input-645:633":{
+            "type":"string",
+            "default":" & ",
+            "description":"delimiter to be used to divide individual looked up values",
+            "example":" & "
+        },
+        "string-input-645:632":{
+            "type":"string",
+            "default":"",
+            "description":"suffix to add to added column names",
+            "example":""
+        },
+        "string-input-636:632":{
+            "type":"string",
+            "default":"",
+            "description":"suffix to add to added column names",
+            "example":""
+        },
+        "column-filter-645:627":{
+            "type":"object",
+            "properties":{
+                "columns":{
+                    "type":"array",
+                    "items":{
+                        "type":"string",
+                        "default":"Sequence"
+                    }
+                }
+            },
+            "description":"select columns which should be added from bottom Input table",
+            "example":{
+                "columns":[
+                    "Sequence",
+                    "N-term cleavage window",
+                    "C-term cleavage window",
+                    "Amino acid before",
+                    "First amino acid",
+                    "Second amino acid",
+                    "Second last amino acid",
+                    "Last amino acid",
+                    "Amino acid after",
+                    "A Count",
+                    "R Count",
+                    "N Count",
+                    "D Count",
+                    "C Count",
+                    "Q Count",
+                    "E Count",
+                    "G Count",
+                    "H Count",
+                    "I Count",
+                    "L Count",
+                    "K Count",
+                    "M Count",
+                    "F Count",
+                    "P Count",
+                    "S Count",
+                    "T Count",
+                    "W Count",
+                    "Y Count",
+                    "V Count",
+                    "U Count",
+                    "O Count",
+                    "Length",
+                    "Missed cleavages",
+                    "Mass",
+                    "Proteins",
+                    "Leading razor protein",
+                    "Start position",
+                    "End position",
+                    "Gene names",
+                    "Protein names",
+                    "Unique (Groups)",
+                    "Unique (Proteins)",
+                    "Charges",
+                    "PEP",
+                    "Score",
+                    "Identification type 10000-1_1",
+                    "Identification type 10000-1_2",
+                    "Identification type 10000-1_3",
+                    "Identification type 1000-1_1",
+                    "Identification type 1000-1_2",
+                    "Identification type 1000-1_3",
+                    "Identification type 100-1_1",
+                    "Identification type 100-1_2",
+                    "Identification type 100-1_3",
+                    "Identification type 10-1_1",
+                    "Identification type 10-1_2",
+                    "Identification type 10-1_3",
+                    "Identification type 1-1_1",
+                    "Identification type 1-1_2",
+                    "Identification type 1-1_3",
+                    "Identification type 2-1_1",
+                    "Identification type 2-1_2",
+                    "Identification type 2-1_3",
+                    "Identification type 5-1_1",
+                    "Identification type 5-1_2",
+                    "Identification type 5-1_3",
+                    "Fraction Average",
+                    "Fraction Std. Dev.",
+                    "Fraction 1",
+                    "Experiment 10000-1_1",
+                    "Experiment 10000-1_2",
+                    "Experiment 10000-1_3",
+                    "Experiment 1000-1_1",
+                    "Experiment 1000-1_2",
+                    "Experiment 1000-1_3",
+                    "Experiment 100-1_1",
+                    "Experiment 100-1_2",
+                    "Experiment 100-1_3",
+                    "Experiment 10-1_1",
+                    "Experiment 10-1_2",
+                    "Experiment 10-1_3",
+                    "Experiment 1-1_1",
+                    "Experiment 1-1_2",
+                    "Experiment 1-1_3",
+                    "Experiment 2-1_1",
+                    "Experiment 2-1_2",
+                    "Experiment 2-1_3",
+                    "Experiment 5-1_1",
+                    "Experiment 5-1_2",
+                    "Experiment 5-1_3",
+                    "Intensity",
+                    "Intensity 10000-1_1",
+                    "Intensity 10000-1_2",
+                    "Intensity 10000-1_3",
+                    "Intensity 1000-1_1",
+                    "Intensity 1000-1_2",
+                    "Intensity 1000-1_3",
+                    "Intensity 100-1_1",
+                    "Intensity 100-1_2",
+                    "Intensity 100-1_3",
+                    "Intensity 10-1_1",
+                    "Intensity 10-1_2",
+                    "Intensity 10-1_3",
+                    "Intensity 1-1_1",
+                    "Intensity 1-1_2",
+                    "Intensity 1-1_3",
+                    "Intensity 2-1_1",
+                    "Intensity 2-1_2",
+                    "Intensity 2-1_3",
+                    "Intensity 5-1_1",
+                    "Intensity 5-1_2",
+                    "Intensity 5-1_3",
+                    "Reverse",
+                    "Potential contaminant",
+                    "id",
+                    "Protein group IDs",
+                    "Mod. peptide IDs",
+                    "Evidence IDs",
+                    "MS/MS IDs",
+                    "Best MS/MS",
+                    "Deamidation (NQ) site IDs",
+                    "Oxidation (M) site IDs",
+                    "MS/MS Count",
+                    "LFQ intensity 10000-1_1",
+                    "LFQ intensity 10000-1_2",
+                    "LFQ intensity 10000-1_3",
+                    "LFQ intensity 1000-1_1",
+                    "LFQ intensity 1000-1_2",
+                    "LFQ intensity 1000-1_3",
+                    "LFQ intensity 100-1_1",
+                    "LFQ intensity 100-1_2",
+                    "LFQ intensity 100-1_3",
+                    "LFQ intensity 10-1_1",
+                    "LFQ intensity 10-1_2",
+                    "LFQ intensity 10-1_3",
+                    "LFQ intensity 1-1_1",
+                    "LFQ intensity 1-1_2",
+                    "LFQ intensity 1-1_3",
+                    "LFQ intensity 2-1_1",
+                    "LFQ intensity 2-1_2",
+                    "LFQ intensity 2-1_3",
+                    "LFQ intensity 5-1_1",
+                    "LFQ intensity 5-1_2",
+                    "LFQ intensity 5-1_3"
+                ]
+            }
+        },
+        "string-input-636:633":{
+            "type":"string",
+            "default":" & ",
+            "description":"delimiter to be used to divide individual looked up values",
+            "example":" & "
+        },
+        "column-selection-0:626":{
+            "type":"object",
+            "properties":{
+                "column":{
+                    "type":"string",
+                    "default":"id"
+                }
+            },
+            "description":"Bottom Input table column containing IDs you want to look up values for (one ID per row necessary!)",
+            "example":{
+                "column":"id"
+            }
+        },
+        "string-input-0:633":{
+            "type":"string",
+            "default":" & ",
+            "description":"delimiter to be used to divide individual looked up values",
+            "example":" & "
+        },
+        "column-filter-636:627":{
+            "type":"object",
+            "properties":{
+                "columns":{
+                    "type":"array",
+                    "items":{
+                        "type":"string",
+                        "default":"Protein ID"
+                    }
+                }
+            },
+            "description":"select columns which should be added from bottom Input table",
+            "example":{
+                "columns":[
+                    "Protein ID",
+                    "Entry",
+                    "Entry name",
+                    "Status",
+                    "Protein names",
+                    "Gene names",
+                    "Organism",
+                    "Gene ontology (GO)",
+                    "Gene ontology (biological process)",
+                    "Gene ontology (molecular function)",
+                    "Gene ontology (cellular component)",
+                    "Gene ontology IDs",
+                    "Subcellular location [CC]",
+                    "Protein families",
+                    "Interacts with",
+                    "Sequence",
+                    "Cross-reference (InterPro)",
+                    "Cross-reference (Pfam)",
+                    "Cross-reference (IntAct)"
+                ]
+            }
+        },
+        "column-selection-636:624":{
+            "type":"object",
+            "properties":{
+                "column":{
+                    "type":"string",
+                    "default":"Majority protein IDs"
+                }
+            },
+            "description":"Top Input table column containing IDs you want to look up in the bottom Input table",
+            "example":{
+                "column":"Majority protein IDs"
+            }
+        },
+        "string-input-0:632":{
+            "type":"string",
+            "default":"",
+            "description":"suffix to add to added column names",
+            "example":""
+        },
+        "column-selection-0:624":{
+            "type":"object",
+            "properties":{
+                "column":{
+                    "type":"string",
+                    "default":"id"
+                }
+            },
+            "description":"Top Input table column containing IDs you want to look up in the bottom Input table",
+            "example":{
+                "column":"id"
+            }
+        },
+        "column-selection-640:626":{
+            "type":"object",
+            "properties":{
+                "column":{
+                    "type":"string",
+                    "default":"id"
+                }
+            },
+            "description":"Bottom Input table column containing IDs you want to look up values for (one ID per row necessary!)",
+            "example":{
+                "column":"id"
+            }
+        },
+        "column-selection-640:624":{
+            "type":"object",
+            "properties":{
+                "column":{
+                    "type":"string",
+                    "default":"Peptide IDs"
+                }
+            },
+            "description":"Top Input table column containing IDs you want to look up in the bottom Input table",
+            "example":{
+                "column":"Peptide IDs"
+            }
+        },
+        "string-input-640:632":{
+            "type":"string",
+            "default":"",
+            "description":"suffix to add to added column names",
+            "example":""
+        },
+        "string-input-640:633":{
+            "type":"string",
+            "default":" & ",
+            "description":"delimiter to be used to divide individual looked up values",
+            "example":" & "
+        },
+        "string-input-645:625":{
+            "type":"string",
+            "default":";",
+            "description":"delimiter used to divide individual IDs in top Input table IDs column",
+            "example":";"
+        },
+        "boolean-input-645:634":{
+            "type":"boolean",
+            "default":"false",
+            "description":"whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns; checked -> dataframe of processed columns will be returned only",
+            "example":false
+        },
+        "string-input-640:625":{
+            "type":"string",
+            "default":";",
+            "description":"delimiter used to divide individual IDs in top Input table IDs column",
+            "example":";"
+        },
+        "string-input-640:629":{
+            "type":"string",
+            "default":"peptides_",
+            "description":"prefix to add to added column names",
+            "example":"peptides_"
+        },
+        "boolean-input-636:634":{
+            "type":"boolean",
+            "default":"false",
+            "description":"whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns; checked -> dataframe of processed columns will be returned only",
+            "example":false
+        },
+        "string-input-636:625":{
+            "type":"string",
+            "default":";",
+            "description":"delimiter used to divide individual IDs in top Input table IDs column",
+            "example":";"
+        },
+        "string-input-645:629":{
+            "type":"string",
+            "default":"peptides_",
+            "description":"prefix to add to added column names",
+            "example":"peptides_"
+        },
+        "string-input-636:629":{
+            "type":"string",
+            "default":"UniProt_",
+            "description":"prefix to add to added column names",
+            "example":"UniProt_"
+        },
+        "boolean-input-640:634":{
+            "type":"boolean",
+            "default":"false",
+            "description":"whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns; checked -> dataframe of processed columns will be returned only",
+            "example":false
+        },
+        "string-input-0:629":{
+            "type":"string",
+            "default":"UniProt_",
+            "description":"prefix to add to added column names",
+            "example":"UniProt_"
+        },
+        "string-input-0:625":{
+            "type":"string",
+            "default":";",
+            "description":"delimiter used to divide individual IDs in top Input table IDs column",
+            "example":";"
+        },
+        "column-selection-636:626":{
+            "type":"object",
+            "properties":{
+                "column":{
+                    "type":"string",
+                    "default":"Protein ID"
+                }
+            },
+            "description":"Bottom Input table column containing IDs you want to look up values for (one ID per row necessary!)",
+            "example":{
+                "column":"Protein ID"
+            }
+        },
+        "boolean-input-0:634":{
+            "type":"boolean",
+            "default":"false",
+            "description":"whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns; checked -> dataframe of processed columns will be returned only",
+            "example":false
+        }
+    }
+}
