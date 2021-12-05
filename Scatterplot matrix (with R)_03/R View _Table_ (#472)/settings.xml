@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+<entry key="node_file" type="xstring" value="settings.xml"/>
+<config key="flow_stack"/>
+<config key="internal_node_subsettings">
+<entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+</config>
+<config key="model">
+<entry key="Image width" type="xint" value="2500"/>
+<entry key="Image height" type="xint" value="2500"/>
+<entry key="Image resolution" type="xstring" value="150"/>
+<entry key="Image background color" type="xstring" value="#ffffff"/>
+<entry key="Text point size" type="xint" value="12"/>
+<config key="R settings">
+<entry key="script" type="xstring" value="# load data%%00010data &lt;- knime.in%%00010%%00010# load value for data imputation and turn it into a numeric value%%00010if (knime.flow.in[[&quot;imputation_value&quot;]] != &quot;None&quot;){%%00010%%00009imp &lt;- as.numeric(knime.flow.in[[&quot;imputation_value&quot;]])%%00010}%%00010%%00010# set axes limits%%00010if (knime.flow.in[[&quot;manual_x_axis_limits&quot;]] != &quot;None&quot;){%%00010 %%00009xlim &lt;- c(as.numeric(knime.flow.in[[&quot;manual_x_min&quot;]]),%%00010  %%00009%%00009%%00009as.numeric(knime.flow.in[[&quot;manual_x_max&quot;]]))%%00010} else {%%00010  %%00009xlim &lt;- c(min(data),max(data))%%00010}%%00010  %%00010if (knime.flow.in[[&quot;manual_y_axis_limits&quot;]] != &quot;None&quot;){%%00010  %%00009ylim &lt;- c(as.numeric(knime.flow.in[[&quot;manual_y_min&quot;]]),%%00010  %%00009%%00009%%00009as.numeric(knime.flow.in[[&quot;manual_y_max&quot;]]))%%00010} else if (knime.flow.in[[&quot;MAplot&quot;]] == 1){%%00010%%00009variance &lt;- apply(data, 1, function(x) max(x) - min(x))%%00010%%00009variance_row &lt;- unlist(data[which.max(variance), ], use.names = FALSE)%%00010%%00009ymin &lt;- min(variance_row) - max(variance_row)%%00010%%00009ymax &lt;- max(variance_row) - min(variance_row)%%00010%%00009ylim &lt;- c(ymin, ymax)%%00010} else {%%00010  %%00009ylim &lt;- c(min(data),max(data))%%00010}%%00010%%00010# variables for title offset%%00010l &lt;- 2%%00010oma_down &lt;- 3%%00010oma_up &lt;- 6%%00010%%00010# set title for the plot%%00010if (knime.flow.in[[&quot;MAplot&quot;]] == 0){%%00010%%00009complete_title = &quot;Density (dark blue-&gt;dark red) scatter plot ('y' on 'x') matrix&quot;%%00010} else {%%00010%%00009complete_title = &quot;Density (dark blue-&gt;dark red) MA plot ('x-y' on '(x+y)/2') matrix&quot;%%00010}%%00010if (knime.flow.in[[&quot;imputation_value&quot;]] != &quot;None&quot;){%%00010%%00009complete_title = paste(complete_title, &quot;\n pairwise imputation by &quot;, %%00010%%00009%%00009%%00009%%00009 %%00009  as.character(knime.flow.in[[&quot;imputation_value&quot;]]), %%00010%%00009%%00009%%00009%%00009 %%00009  &quot; was done when a single value was missing&quot;,%%00010%%00009%%00009%%00009%%00009 %%00009  sep = &quot;&quot;)%%00010%%00009l &lt;- l - 0.4%%00010%%00009oma_down &lt;- oma_down - 0.33%%00010%%00009oma_up &lt;- oma_up + 0.33%%00010}%%00010if (knime.flow.in[[&quot;regression_type&quot;]] != &quot;none&quot;){%%00010%%00009if (knime.flow.in[[&quot;regression_type&quot;]] == &quot;lowess&quot;){%%00010%%00009%%00009complete_title = paste(complete_title, &quot;\n red curve is estimated nonparametric lowess model&quot;)%%00010%%00009} else {%%00010%%00009%%00009complete_title = paste(complete_title, &quot;\n red curve is estimated linear regression model&quot;)%%00010%%00009}%%00010%%00009l &lt;- l - 0.4%%00010%%00009oma_down &lt;- oma_down - 0.33%%00010%%00009oma_up &lt;- oma_up + 0.33%%00010}%%00010if (knime.flow.in[[&quot;show_unity&quot;]] == 1){%%00010%%00009complete_title = paste(complete_title, &quot;\n dashed line is unity line (x=y)&quot;)%%00010%%00009l &lt;- l - 0.4%%00010%%00009oma_down &lt;- oma_down - 0.33%%00010%%00009oma_up &lt;- oma_up + 0.33%%00010}%%00010complete_title = paste(complete_title, &quot;\n &quot;, knime.flow.in[[&quot;graph_subtitle&quot;]])%%00010%%00010# scatterplot function%%00010panel_scatterplot &lt;- function(x,y, ...) {%%00010  x &lt;- unlist(x)%%00010  y &lt;- unlist(y)%%00010  df &lt;- data.frame(x,y)%%00010  %%00010  if (knime.flow.in[[&quot;imputation_value&quot;]] != &quot;None&quot;){%%00010  %%00009df  &lt;- subset(df, df[,1] != imp | df[,2] != imp)%%00010  %%00009x &lt;- unlist(df[,1])%%00010  %%00009y &lt;- unlist(df[,2])%%00010  }%%00010  %%00010  x &lt;- densCols(x,y, colramp=colorRampPalette(c(&quot;black&quot;, &quot;white&quot;)))%%00010  df$dens &lt;- col2rgb(x)[1,] + 1L%%00010  cols &lt;-  colorRampPalette(c(&quot;#000080&quot;, &quot;#004cff&quot;, &quot;#29ffce&quot;,&quot;#ceff29&quot;, &quot;#ff6800&quot;, &quot;#800000&quot;))(256)%%00010  df$col &lt;- cols[df$dens]%%00010  par(new = TRUE)%%00010  plot(y~x, data = df[order(df$dens),], %%00010       ylim = ylim, xlim = xlim, pch = 3, col = col,%%00010       cex = 0.5, xlab = &quot;&quot;, ylab = &quot;&quot;,%%00010       main = &quot;&quot;, xaxt = 'n', yaxt = 'n')%%00010       %%00010  if (knime.flow.in[[&quot;show_unity&quot;]] == 1){%%00010  %%00009abline(a = 0, b = 1, lty = 2)%%00010  }%%00010  %%00010  if (knime.flow.in[[&quot;regression_type&quot;]] == &quot;lowess&quot;){%%00010  %%00009lines(lowess(x = df$x, y = df$y), col = &quot;red&quot;)%%00010  } else if(knime.flow.in[[&quot;regression_type&quot;]] == &quot;linear&quot;){%%00010  %%00009abline(lm(df$y ~ df$x), col = &quot;red&quot;)%%00009%%00010  }%%00010}%%00010%%00010# MA function%%00010panel_MA &lt;- function(x,y, ...) {%%00010  x_old &lt;- unlist(x)%%00010  y_old &lt;- unlist(y)%%00010%%00010  if(knime.flow.in[[&quot;imputation_value&quot;]] != &quot;None&quot;){%%00010  %%00009temp &lt;- data.frame(x_old, y_old)%%00010  %%00009temp  &lt;- subset(temp, temp[,1] != imp | temp[,2] != imp)%%00010  %%00009x_old &lt;- unlist(temp[,1])%%00010  %%00009y_old &lt;- unlist(temp[,2])%%00010  }%%00010  %%00010  df &lt;- data.frame(x = (x_old + y_old)/2,%%00010  %%00009%%00009%%00009    y = (x_old - y_old))%%00010  x &lt;- densCols(x_old,y_old, colramp=colorRampPalette(c(&quot;black&quot;, &quot;white&quot;)))%%00010  df$dens &lt;- col2rgb(x)[1,] + 1L%%00010  cols &lt;-  colorRampPalette(c(&quot;#000080&quot;, &quot;#004cff&quot;, &quot;#29ffce&quot;,&quot;#ceff29&quot;, &quot;#ff6800&quot;, &quot;#800000&quot;))(256)%%00010  df$col &lt;- cols[df$dens]%%00010  par(new = TRUE)%%00010  plot(y~x, data = df[order(df$dens),], %%00010       ylim = ylim, xlim = xlim, pch = 3, col = col,%%00010       cex = 0.5, xlab = &quot;&quot;, ylab = &quot;&quot;,%%00010       main = &quot;&quot;, xaxt = 'n', yaxt = 'n')%%00010       %%00010  if (knime.flow.in[[&quot;show_unity&quot;]] == 1){%%00010  %%00009abline(h = 0, lty = 2)%%00010  }%%00010  %%00010  if (knime.flow.in[[&quot;regression_type&quot;]] == &quot;lowess&quot;){%%00010  %%00009lines(lowess(x = df$x, y = df$y), col = &quot;red&quot;)%%00010  } else if (knime.flow.in[[&quot;regression_type&quot;]] == &quot;linear&quot;) {%%00010  %%00009abline(lm(df$y ~ df$x), col = &quot;red&quot;)%%00009%%00010  }%%00010}%%00010%%00010# density function%%00010panel_density &lt;- function(x, ...){%%00010  if (knime.flow.in[[&quot;imputation_value&quot;]] != &quot;None&quot;){%%00010  %%00009x &lt;- x[which(x != knime.flow.in[[&quot;imputation_value&quot;]])]%%00010  }%%00010  %%00010  par(new = TRUE)%%00010  dens &lt;- density(x, na.rm = TRUE)%%00010  ylimit &lt;- max(dens$y)*2%%00010  plot(dens, main = &quot;&quot;, xlab = &quot;&quot;, ylab = &quot;&quot;, %%00010  %%00009ylim = c(0, ylimit), xaxt = 'n', yaxt = 'n')%%00010}%%00010%%00010# final plot%%00010par(oma = c(0,0,0,2))%%00010if (knime.flow.in[[&quot;MAplot&quot;]] == 1){%%00010%%00009pairs(data,%%00010      %%00009lower.panel = panel_MA,%%00010      %%00009upper.panel = panel_MA,%%00010      %%00009diag.panel = panel_density,%%00010      %%00009cex.labels = 1,%%00010      %%00009font.labels = 2,%%00010      %%00009cex.axis = 0.8,%%00010      %%00009xlim = xlim,%%00010      %%00009ylim = ylim,%%00010      %%00009oma = c(oma_down, 4.5, oma_up, 4.5))%%00010} else {%%00010%%00009pairs(data,%%00010      %%00009lower.panel = panel_scatterplot,%%00010      %%00009upper.panel = panel_scatterplot,%%00010      %%00009diag.panel = panel_density,%%00010      %%00009cex.labels = 1,%%00010      %%00009font.labels = 2,%%00010      %%00009cex.axis = 0.8,%%00010      %%00009xlim = xlim,%%00010      %%00009ylim = ylim,%%00010      %%00009oma = c(oma_down, 4.5, oma_up, 4.5))%%00010}%%00010title(complete_title, line = l, adj = 0.5, cex.main = 0.65, font.main = 1, xpd=NA)"/>
+<entry key="templateUUID" type="xstring" isnull="true" value=""/>
+<entry key="version" type="xstring" value="version 1.x"/>
+<entry key="Output non numbers (NaN, Inf, -Inf) as missing cells" type="xboolean" value="false"/>
+<entry key="sendRowNames" type="xboolean" value="true"/>
+<entry key="sendBatchSize" type="xint" value="10000"/>
+<entry key="knimeInType" type="xstring" value="data.frame"/>
+</config>
+<entry key="Image type" type="xstring" value="PNG"/>
+</config>
+<config key="variables">
+<entry key="version" type="xstring" value="V_2019_09_13"/>
+<config key="tree">
+<config key="Image width">
+<entry key="used_variable" type="xstring" value="total_height"/>
+<entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+</config>
+<config key="Image height">
+<entry key="used_variable" type="xstring" value="total_height"/>
+<entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+</config>
+</config>
+</config>
+<entry key="customDescription" type="xstring" isnull="true" value=""/>
+<entry key="state" type="xstring" value="IDLE"/>
+<entry key="factory" type="xstring" value="org.knime.r.RViewNodeFactory"/>
+<entry key="node-name" type="xstring" value="R View (Table)"/>
+<entry key="node-bundle-name" type="xstring" value="KNIME R-Project nodes"/>
+<entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.r"/>
+<entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+<entry key="node-bundle-version" type="xstring" value="4.1.1.v202001312017"/>
+<entry key="node-feature-name" type="xstring" value="KNIME Interactive R Statistics Integration"/>
+<entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.r.feature.group"/>
+<entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+<entry key="node-feature-version" type="xstring" value="4.1.1.v202001312017"/>
+<config key="factory_settings"/>
+<entry key="name" type="xstring" value="R View (Table)"/>
+<entry key="hasContent" type="xboolean" value="false"/>
+<entry key="isInactive" type="xboolean" value="false"/>
+<config key="ports">
+<config key="port_1">
+<entry key="index" type="xint" value="1"/>
+<entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+</config>
+</config>
+<config key="filestores">
+<entry key="file_store_location" type="xstring" isnull="true" value=""/>
+<entry key="file_store_id" type="xstring" isnull="true" value=""/>
+</config>
+</config>
