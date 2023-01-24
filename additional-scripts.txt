@@ -1,0 +1,109 @@
+###############################################################
+######################### UpSet plots #########################
+###############################################################
+
+# Libraries required
+library(DEP)
+library(dplyr)
+library(here)
+library(UpSetR)
+
+# Data input
+load(here("outputs", "01_DEP_stringent_Rdata.RData"))
+
+# Get the pvalues and logFC from dep_man
+data_results <- get_results(dep_man)
+
+# Plot the upset plot of upregulated proteins (.pdf)
+pdf(here("outputs", "03_DEP_upset-plots.pdf"))
+
+data_results %>%
+  filter(significant == TRUE) %>%
+  select(ends_with("_significant")) %>%
+  mutate_all(
+    funs(
+      case_when(
+        . == FALSE ~ 0,
+        . == TRUE ~ 1
+      ))) %>%
+  rename_with(~ sub("_vs_CTRL_significant", "", .x), everything()) %>%
+  upset(., order.by = "freq")
+
+dev.off()
+
+
+###############################################################
+######################### Gene ontology #######################
+###############################################################
+library(gprofiler2)
+
+# Data input
+heatmap.clusters <- read.csv(here("outputs", "05_clustering_heatmap_pearson-complete.csv")) #clusters from 05_clustering.R
+
+# Cluster 05: ROR1+ROR2+PRICKLE1
+gostres_cl5 <- gost(query = heatmap.clusters$protein[heatmap.clusters$k == "5"], 
+                    organism = "hsapiens", ordered_query = FALSE, 
+                    multi_query = FALSE, significant = TRUE, exclude_iea = FALSE, 
+                    measure_underrepresentation = FALSE, evcodes = FALSE, 
+                    user_threshold = 0.05, correction_method = "g_SCS", 
+                    domain_scope = "annotated", custom_bg = NULL, 
+                    numeric_ns = "", sources = NULL, as_short_link = FALSE)
+
+cluster5_GO <- gostres_cl5$result
+gostplot(gostres_cl5,capped = TRUE,interactive = TRUE)
+
+###############################################################
+######################### Volcano plots #######################
+###############################################################
+library(ggplot2)
+library(ggrepel)
+library(ggprism)
+
+# Data input
+load(here("outputs", "01_DEP_stringent_Rdata.RData"))
+
+data_results <- data_results %>%
+  mutate(PCP_baits = case_when(
+    name == "DVL3" ~ "DVL3",
+    name == "ROR1" ~ "ROR1",
+    name == "ROR2" ~ "ROR2",
+    name == "VANGL2" ~ "VANGL2",
+    name == "PRICKLE1" ~ "PRICKLE1",
+    TRUE ~ ""
+  ))
+
+volcano_plot <- function (data, logFC, pvalue, plotname, bait) {
+  require(dplyr)
+  require(lazyeval)
+  
+  logFC <- enquo(logFC)
+  pvalue <- enquo(pvalue)
+  
+  data1 <- data %>%
+    mutate(group = case_when(
+      (!!logFC > 1 & !!pvalue < 0.05) ~ "up",
+      TRUE ~ "ns"
+    )) 
+  
+  gg <- ggplot(data1, aes(x=!!logFC, y=-log10(!!pvalue), color=group, label=PCP_baits))+
+    geom_point(size = 2) +
+    theme_prism(base_size = 14)+
+    geom_vline(xintercept=c(-1, 1), col="black", alpha = 0.2) +
+    geom_hline(yintercept=-log10(0.05), col="black", alpha = 0.2) +
+    labs(subtitle = bait,
+         sign_col = "",
+         x = "log2 Fold Change",
+         y = "-log10(adj. p-value)")+
+    geom_text_repel()+
+    scale_color_manual(values = c("grey", "black"))+
+    theme(legend.position = "none")
+ 
+  name_file <- paste(plotname,".pdf", collapse = NULL) 
+  ggsave(here("outputs", name_file))
+}
+
+volcano_plot(data = data_results, DVL3_vs_CTRL_ratio, DVL3_vs_CTRL_p.adj, "02_DEP_volcano-plot_DVL3", "DVL3")
+volcano_plot(data = data_results, ROR1_vs_CTRL_ratio, ROR1_vs_CTRL_p.adj, "02_DEP_volcano-plot_ROR1", "ROR1")
+volcano_plot(data = data_results, ROR2_vs_CTRL_ratio, ROR2_vs_CTRL_p.adj, "02_DEP_volcano-plot_ROR2", "ROR2")
+volcano_plot(data = data_results, VANGL2_vs_CTRL_ratio, VANGL2_vs_CTRL_p.adj, "02_DEP_volcano-plot_VANGL2", "VANGL2")
+volcano_plot(data = data_results, PRICKLE1_vs_CTRL_ratio, PRICKLE1_vs_CTRL_p.adj, "02_DEP_volcano-plot_PRICKLE1", "PRICKLE1")
